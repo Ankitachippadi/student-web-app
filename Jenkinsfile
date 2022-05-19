@@ -8,13 +8,13 @@ pipeline {
 // 	       	}
 // 	}
 	
-	stage('Unit Test') {
-	   steps {
-			echo 'Project Testing stage'
-			bat label: 'Test running', script: '''mvn test'''
+// 	stage('Unit Test') {
+// 	   steps {
+// 			echo 'Project Testing stage'
+// 			bat label: 'Test running', script: '''mvn test'''
 	       
-       		}
-   	}
+//        		}
+//    	}
 
 	stage('Jacoco Coverage Report') {
         	steps{
